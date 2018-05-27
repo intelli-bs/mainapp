@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in intelliBS!
+                    You are logged in iBS!
                 </div>
             </div>
         </div>
