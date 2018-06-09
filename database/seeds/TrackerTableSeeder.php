@@ -39,7 +39,6 @@ class TrackerTableSeeder extends Seeder
                 $TrackerLog->created_at = $time;
                 $TrackerLog->save();
                 $j+= 30;
-                print_r($TrackerLog);
             }
         }
     }
