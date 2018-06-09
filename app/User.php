@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','lastName','phone','payment_type'
     ];
 
     /**
@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function employeeHourRates()
+    {
+        return $this->hasMany('App\EmployeeHourRate');
+    }
+    public function employeeWorkLogs()
+    {
+        return $this->hasMany('App\EmployeeWorkLog');
+    }
 }

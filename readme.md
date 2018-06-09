@@ -1,7 +1,7 @@
 # Application
 
 ## Before you start project:
-* Install php (PHP >= 7.1.3),Apache web server, Apache web server, MySQL, composer, git
+* Install php (PHP >= 7.1.3),Apache web server, MySQL, composer, git
 OR install Homestead - server from Laravel (for it you need Virtual Box + Vagrant)
 
 * Install composer (Homestead includes it)
@@ -14,9 +14,12 @@ OR install Homestead - server from Laravel (for it you need Virtual Box + Vagran
 ## To start project:
 * Clone repo
 > git clone https://github.com/intelli-bs/mainapp.git
-
-* Run in terminal
+* Create local env in .env file
+* Run in terminal:
 > composer install
+
 > php artisan migrate
 
-* Create local env in .env file
+> php artisan db:seed -v
+
+
